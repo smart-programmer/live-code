@@ -1,0 +1,12 @@
+{% extends "main_stuff/header.html" %}
+
+
+{% block content %}
+	<center>
+		<h2>{{ object.body|safe|linebreaks }}</h2><br />
+		{% if object.image %}
+		<img src='{{ object.image.url }}' />
+		{% endif %}
+		<p>{{ adkar.time_of_updating|timesince }} ago آخر تحديث تم</p>
+	</center>
+{% endblock %}

@@ -1,0 +1,369 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+#blue-h1 {
+  color: blue;
+}
+
+#red-p {
+  color: red;
+}
+/*http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg*/
+.header {
+  background: url(http://www14.0zz0.com/2011/03/05/15/968348943.png) no-repeat center center; 
+  background-size: cover;
+  height: 800px;
+  text-align: center; 
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase; 
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(http://www.s7r.com/file/191/600x338/16:9/%D9%84%D8%A7-%D8%AA%D9%86%D8%B3%D9%89-%D8%B0%D9%83%D8%B1-%D8%A7%D9%84%D9%84%D9%87_974981127.jpg) center center;
+  background-size: cover;
+  height: 600px; 
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: right; 
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right; 
+}
+
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
+
+.new {
+  background: url(http://jmd.im/wp-content/uploads/2017/06/blackiv_thumbnail.jpg) no-repeat center center; 
+  background-size: cover;
+  height: 100px;
+  text-align: center; 
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+/*h1 {
+	color: blue;
+	font-family: cursive;*
+}
+
+.header {
+  background: url(http://www14.0zz0.com/2011/03/05/15/968348943.png) no-repeat center center; 
+  background-size: cover;
+  height: 850px;
+  text-align: center; 
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px;
+}
+
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+}
+
+.header h1 {
+  color: #fff;
+  line-height: 100px; 
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase; 
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+  background-size: cover;
+  height: 600px; 
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h2 {
+  color: #fff;
+  text-align: right; 
+}
+
+.jumbotron p {
+  color: #fff; 
+  text-align: right; 
+}
+
+.jumbotron .btn {
+  margin: 10px 0 0;
+  float: right; 
+}
+
+.footer { 
+  background: #000;
+  height: 80px; 
+  padding-bottom: 50px;
+}
+
+.footer p { 
+  color: #fff;
+  font-size: 14px;  
+  height: 80px; 
+  line-height: 80px;
+  margin: 0;  
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}

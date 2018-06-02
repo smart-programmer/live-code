@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar">
+<head>
+	<title>{% block title %}صحيح الأذكار{% endblock %}</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+
+
+	<style type="text/css">
+		html,
+		body {
+			height:100%
+		}
+		{% include "main_stuff/includes/style.css" %}
+	</style>
+</head>
+	<body>
+		<div class="header"><br />
+			<div class="container">
+				<h1>الحمد لله</h1>
+				 <a class="btn" href="/contact/">تواصل معي</a><br /><br /><br /><br /><br /><br />
+				 <a class="btn" href="#">عن الموقع</a>
+			</div>
+		</div>
+		<div class="nav">
+      <div class="container">
+        <ul>
+          <a href="/"><li>الصفحة الرئيسية</li></a>
+          <a href="/app/"><li>القرآن الكريم</li></a>
+          <a href="/app/أذكار-المساء"><li>اذكار المساء</li></a>
+          <a href="/app/أذكار-النوم"><li>اذكار النوم</li></a>
+          <a href="/app/أذكار-الصباح"><li>أذكار الصباح</li></a>
+          <a href="/admin/"><li>admin</li></a>
+          <a href="/app/My_Form/M"><li>My Form</li></a>
+        </ul>
+      </div>
+    </div>
+    <style>
+    #latest {
+      color: pink;
+    }
+  </style>
+  
+    {% block content %}
+    {% endblock %}
+    <br /><br /><br /><br />
+    <div class="jumbotron">
+      <div class="container">
+        <h2>إنظم إلي!</h2>
+        <p>شاركني في تطوير الموقع برمجيا او عبر ارسالك ملاحظاتك في طور المدونة</p>
+        <a class="btn" href="#">إنظم</a>
+      </div>
+    </div>
+
+
+     <div class="footer">
+      <div class="container">
+        <p>&quot; إن أردت ان لا تندم على شيئ فافعل كل شي خالصا لوجه الله &quot;</p>
+      </div>
+    </div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "main_stuff/header.html" %}
+
+{% block content %}
+
+<center>
+<form method="post" action="{% url 'register' %}">
+{% csrf_token %}
+{{ form.as_p }}
+
+<input type="submit" value="register" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+</center>
+
+{% endblock %}

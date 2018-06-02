@@ -1,0 +1,52 @@
+{% extends "main_stuff/header.html" %}
+{% for single in object_list %}
+
+<title>{% block title %}{{block.super}} | {{single.slug}} {% endblock %}
+{% endfor %}
+{% block content %}
+	<style>
+		.adkar-list-urls {
+			color: green;
+			font-style: italic;
+		}
+
+
+		#adkar-list-bkink
+		{
+		animation-duration : 1255ms;
+		animation-name : blink;
+		animation-iteration-count : infinite;
+		background-color : white;
+		}
+
+
+		@keyframes blink
+		{
+		from
+		{
+		opacity : 1;
+		}
+		to
+		{
+		opacity : 0;
+		}
+	</style>
+	{% for single in object_list %}
+	<center>
+	<a href="/app/{{ single.slug }}/" style="text-decoration:red underline overline wavy"><h4>اضيف في --> {{ single.time_of_addition }}<h1 class="adkar-list-urls">نوع المحتوى --> {{ single.type_of_content }}</a></h1><h3>العنوان</h3><h3 class="adkar-list-urls">{{ single.title }}</h3><!--&nbsp;-->
+
+		<marquee behavior=scroll direction="left" scrollamount="50">
+			<svg height="210" width="500">
+  				<line x1="0" y1="100" x2="500" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+			</svg>
+		</marquee>
+
+		<!--<div  align="right" style="width:50%;float:right ; height: 100%">
+			<marquee  direction="left" >Start from Right & stop at center</marquee>
+		</div>-->
+		<p id="adkar-list-bkink"><a href="index.html" style=font-size:180%; color: #EEE;>ÃÂÃÂ§ÃÂÃÂÃÂÃÂ±ÃÂÃÂ¬ÃÂÃÂÃÂÃÂ¹ ÃÂÃÂ§ÃÂÃÂÃÂÃÂ ÃÂÃÂ§ÃÂÃÂÃÂÃÂµÃÂÃÂÃÂÃÂ­ÃÂÃÂ© ÃÂÃÂ§ÃÂÃÂÃÂÃÂ±ÃÂÃÂ¦ÃÂÃÂÃÂÃÂ³ÃÂÃÂÃÂÃÂ©</a></p>
+	    
+
+	</center>
+	{% endfor %}
+{% endblock %}

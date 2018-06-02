@@ -1,0 +1,20 @@
+{% extends "main_stuff/header.html" %}
+
+
+{% block content %}
+<center>
+  
+  <h1 id="latest">احدث الاذكار المضافة الى الموقع</h1><hr/><br /><br /><br />
+  </center>
+
+    {% for single in object_list %}
+      <center>
+        <a href="/app/{{single.slug}}/"><h2>{{ single.title }}</h2><h3>{{ single.type_of_content }}</h3></a><br />
+        
+
+     </center>
+     <!--<div class="new">
+     </div>-->
+     <hr/>
+     {% endfor %}
+{% endblock %}

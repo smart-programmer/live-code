@@ -1,0 +1,130 @@
+{% extends "main_stuff/header.html" %}
+
+   <title>{% block title %}{{block.super}} | للتواصل{% endblock %}</title>
+{% block content %}
+<style>
+#contact-app {
+	color: maroon;
+	font-family: cursive;
+}
+#contact-info {
+	font-family: cursive;
+}
+
+
+
+
+		     	/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Style all font awesome icons */
+/*.fa {                            
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;                              
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}*/
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: 	#8B4513;
+    color: white;
+}
+
+	</style>
+	<center>
+		<marquee><h1 id="contact-app">{{random_adkar}}</h1></marquee></center>
+	<!--{% for contactinfo in contact_info %}
+			<h3 id="contact-info">{{contactinfo}}</h3>
+		<svg height="210" width="500">
+  			<line x1="0" y1="100" x2="500" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+		</svg>
+	{% endfor %}
+	</center>-->
+	<center>
+	  <div class="dropdown">
+ 	    <button class="dropbtn">تواصل معي عبر</button>
+ 	    <div class="dropdown-content">
+          <script>
+            document.write('<a href="#" class="fa fa-facebook">acebook</a>') //this is just me trying javasctript habbatain 
+          </script>
+  		  <a href="#" class="fa fa-twitter">Twitter</a>
+  		  <a href="#" class="fa fa-instagram">Instagram</a>
+        </div>
+      </div>
+	</center>
+{% endblock %}
